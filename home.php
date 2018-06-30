@@ -152,19 +152,7 @@ $(document).ready(function(){
           }
 
 
-        function locar(){
-        var obj, dbParam, xmlhttp;
-        obj = {}; 
-        dbParam = JSON.stringify(obj); 
-        xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("demo4").innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET", "locar.php?locar=" + dbParam, true); 
-        xmlhttp.send(); 
-        }
+        
 
 </script>
 
